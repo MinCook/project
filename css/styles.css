@@ -92,7 +92,11 @@
         display: block;
         background-color: none;
     }
-   
+    @media (max-width: 424px) {
+        span{
+            font-size: 20px;
+        }
+    }
 }
 /* <------END HEADER ----->  CHECK:OK */
 
@@ -144,10 +148,12 @@
 .section1-buton{
     display: flex;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 .section1-button1{
     color: black;
     background-color: var(--color5); 
+    margin-bottom: 18px;
 }
 .section1-button1:hover,.section2-button:hover{
     background-color: white;
@@ -169,6 +175,14 @@
         display: flex;
         justify-content: center;
       }
+}
+@media (max-width: 424px) {
+    .section1-button1,.section1-button2{
+        width: 100%;
+       
+    }
+  
+
 }
 /* <------END SECTION1 ----->  CHECK:OK */
 
@@ -231,10 +245,12 @@
    justify-content: center;
 }
 
-.section2-box {
-    width: 140px;
-    height: 140px;
+.section2-menu ul li {
+    width: 32%;
     font-size: 30px;
+}
+.section2-box {
+    height: 130px;
 }
 .section2-box a i{
     color: var(--color5);
@@ -323,7 +339,12 @@
     .section2-card-img img{
         width: 60%;
     }
-
+    .section2-box{
+        height: 138px;
+    } 
+    .section2-menu ul li {
+    width: 26%;
+}
    }
 @media (max-width: 764px) {
 
@@ -334,20 +355,32 @@
     margin-left: auto;
     margin-right: auto;
    }
-   .section2-menu{
-    display: flex;
-    justify-content: space-evenly;
-   }
    
-   .section2-menu{
+   .section2-menu ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
    }
    .section2-card-img img{
     width: 80%;
+}   
+.section2-menu ul li {
+    width: 35%;
 }
+.section2-box{
+    height: 138px;
+} 
    }
-  
+   @media (max-width: 424px) {
+    .section2-menu ul li {
+        width: 40%;
+        
+    }
+    h1{
+        font-size: 32px;
+    }
+    
+
+}
   /* <------END SECTION2----->  / 
 
 
@@ -409,7 +442,9 @@
 @media (max-width: 764px) {
     .section3-iner{
         text-align: center;
+        padding-left: 20px;
     }
+  
 }
   /* <------END SECTION3---->  CHECK:OK */
 
@@ -730,6 +765,7 @@
     .section6-menu li{
         width: 40%;
         margin-bottom: 30px;
+        margin-right: 0px;
     }
     .section6-mini ul{
         display: flex;
@@ -751,11 +787,16 @@
         width: 98%;   
         text-align: center;
         padding: 0px;
-    }
-    .section6-mini li h3{
-     
+    } 
  }
-    
+ @media (max-width: 576px) {
+    .section6-menu li{
+        width: 100%;
+        padding: 20px;
+    }
+    .section6-block{
+        justify-content: center;
+    }
  }
 /* SECTION7 */
 .ground7{
